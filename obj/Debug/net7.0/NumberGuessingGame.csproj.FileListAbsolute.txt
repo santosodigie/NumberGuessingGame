@@ -1,0 +1,15 @@
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/bin/Debug/net7.0/NumberGuessingGame
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/bin/Debug/net7.0/NumberGuessingGame.deps.json
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/bin/Debug/net7.0/NumberGuessingGame.runtimeconfig.json
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/bin/Debug/net7.0/NumberGuessingGame.dll
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/bin/Debug/net7.0/NumberGuessingGame.pdb
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.csproj.AssemblyReference.cache
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.AssemblyInfoInputs.cache
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.AssemblyInfo.cs
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.csproj.CoreCompileInputs.cache
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.dll
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/refint/NumberGuessingGame.dll
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.pdb
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/NumberGuessingGame.genruntimeconfig.cache
+/Users/santosodigie/CSharpProjects/NumberGuessingGame/obj/Debug/net7.0/ref/NumberGuessingGame.dll
