@@ -1,32 +1,47 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Welcome to my number guessing game");
 
-Random rnd = new Random();
+bool playAgain = true;
 
-int randomnum = rnd.Next(1, 20);
-
-bool exit = false;
-
-while (!exit)
+while (playAgain)
 {
-    Console.WriteLine("Please guess a number between 1 and 20! ");
-    int guess = int.Parse(Console.ReadLine());
+    Random rnd = new Random();
+    int randomnum = rnd.Next(1, 21);
+    bool exit = false;
 
-    if (guess == randomnum)
+    while (!exit)
     {
-        Console.WriteLine("Congrats you guessed the number!");
-        exit = true;
+        Console.WriteLine("Please guess a number between 1 and 20! ");
+        if (int.TryParse(Console.ReadLine(), out int guess))
+        {
+            if (guess < 1 || guess > 20)
+            {
+                Console.WriteLine("Please enter a number between 1 and 20");
+            }
+            else if (guess == randomnum)
+            {
+                Console.WriteLine("Congrats you guessed the number!");
+                exit = true;
+            }
+            else if (guess < randomnum)
+            {
+                Console.WriteLine("Guess higher");
+            }
+            else if (guess > randomnum)
+            {
+                Console.WriteLine("Guess lower");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Please enter a valid number");
+        }
     }
-    else if (guess < randomnum)
+    Console.WriteLine("Do you want to play again? (y/n)");
+    string response = Console.ReadLine().ToLower();
+    if (response != "y")
     {
-        Console.WriteLine("Guess higher");
-    }
-    else if (guess > randomnum)
-    {
-        Console.WriteLine("Guess lower");
-    }
-    else
-    {
-        Console.WriteLine("Please enter a valid number");
+        playAgain = false;
     }
 }
+Console.WriteLine("Thanks for playing!");
