@@ -2,18 +2,20 @@
 Console.WriteLine("Welcome to my number guessing game");
 
 bool playAgain = true;
-
+int highscore = 0;
 while (playAgain)
 {
     Random rnd = new Random();
     int randomnum = rnd.Next(1, 21);
     bool exit = false;
+    int count = 0;
 
     while (!exit)
     {
         Console.WriteLine("Please guess a number between 1 and 20! ");
         if (int.TryParse(Console.ReadLine(), out int guess))
         {
+            count++;
             if (guess < 1 || guess > 20)
             {
                 Console.WriteLine("Please enter a number between 1 and 20");
@@ -21,6 +23,13 @@ while (playAgain)
             else if (guess == randomnum)
             {
                 Console.WriteLine("Congrats you guessed the number!");
+                Console.WriteLine($"It took {count} guesses");
+
+                if (highscore = 0 || count < highscore)
+                {
+                    highscore = count;
+                    Console.WriteLine($"Congrats you achieved a new highscore of {count}");
+                }
                 exit = true;
             }
             else if (guess < randomnum)
@@ -35,6 +44,7 @@ while (playAgain)
         else
         {
             Console.WriteLine("Please enter a valid number");
+            count = +1;
         }
     }
     Console.WriteLine("Do you want to play again? (y/n)");
